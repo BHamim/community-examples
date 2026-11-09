@@ -219,7 +219,7 @@ if (txHash) console.log("Submitted:", `https://basescan.org/tx/${txHash}`);
 
 ### Optional: add transaction evidence
 
-This guide does not require any payment. If you also want the transaction itself simulated before signing, the SpendGuard response lists optional paid checks in `paidOptions`, such as Transaction Preflight (0.05 USDC via x402). Nothing is charged automatically. To use it, remove `applyAgentProof: false` and pass the preflight verdict as `context.agentProofDecision`; without that evidence SpendGuard returns `HUMAN_APPROVAL`. See the [KushBitx quickstart](https://kushbitx.com/quickstart) for details.
+This guide does not require any payment. If you also want the transaction itself simulated before signing, the SpendGuard response lists optional paid checks in `paidOptions`, such as Simulation Check (`transaction-preflight`, 0.001 USDC via x402). Nothing is charged automatically. To use it, remove `applyAgentProof: false` and pass its verdict as `context.agentProofDecision`; without that evidence SpendGuard returns `HUMAN_APPROVAL`. See the [KushBitx quickstart](https://kushbitx.com/quickstart) for details.
 
 ---
 
